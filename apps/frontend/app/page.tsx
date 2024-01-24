@@ -48,7 +48,9 @@ const frontPageGroq = groq`*[_type == "frontPage"][0]{
 }`;
 
 export default async function Home() {
-    const page = await client.fetch<FrontPageType>(frontPageGroq);
+    const page = await client.fetch<FrontPageType>(frontPageGroq, {
+        next: { revalidate: 60 },
+    });
     return (
         <main>
             <Hero
