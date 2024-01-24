@@ -33,7 +33,7 @@ const Navigation = () => {
                     aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
                     className="sm:hidden"
                 />
-                <NavbarBrand className="absolute right-[50%] translate-x-2/4 sm:hidden">
+                <NavbarBrand className="absolute right-[50%] translate-x-2/4 sm:left-8 sm:right-auto">
                     <Link className="font-bold text-inherit text-xl" href="/">
                         S | E
                     </Link>
