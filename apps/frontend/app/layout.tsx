@@ -3,6 +3,7 @@ import { Playfair_Display } from 'next/font/google';
 import './globals.css';
 import { Providers } from './providers';
 import Navigation from '@/components/Navigation';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Playfair_Display({ weight: '400', subsets: ['latin'] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <Navigation />
                 </header>
                 <Providers>{children}</Providers>
+                <Analytics />
             </body>
         </html>
     );
