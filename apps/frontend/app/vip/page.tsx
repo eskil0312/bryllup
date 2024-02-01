@@ -29,7 +29,7 @@ export default async function VipPage() {
         next: { revalidate: 60 },
     });
     return (
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto pt-8 pb-20">
             <div className="flex justify-center flex-wrap">
                 {data.vipContent.map((data, index) => (
                     <ProfileCard
