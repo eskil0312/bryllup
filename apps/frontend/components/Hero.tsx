@@ -27,7 +27,7 @@ const Hero = ({ image, title, subTitle }: HeroProps) => {
             <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden rounded-t-3xl bg-slate-50 opacity-10"></div>
             <div
                 className={clsx(
-                    'absolute left-0 right-0 mr-auto ml-auto w-120 text-white text-center top-44',
+                    'absolute left-0 right-0 mr-auto ml-auto w-120 text-white text-center top-24',
                 )}
             >
                 <h1 className={'text-5xl md:text-6xl '}>{title}</h1>

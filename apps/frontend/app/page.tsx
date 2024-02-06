@@ -58,10 +58,10 @@ export default async function Home() {
                 title={page.heroBlock.title}
                 subTitle={page.heroBlock.subTitle}
             />
-            <div className="flex p-8 flex-col">
-                <div className="flex flex-col items-center pt-14">
+            <div className="flex flex-col">
+                <div className="flex flex-col items-center pt-14 p-8">
                     <h2 className="text-2xl md:text-3xl">{page.introBlock.title}</h2>
-                    <div className="m-auto max-w-2xl text-center pt-8">
+                    <div className="m-auto max-w-2xl text-center">
                         <PortableText value={page.introBlock.body} />
                     </div>
                 </div>
@@ -71,6 +71,7 @@ export default async function Home() {
                         imageAsset={contentListItem.image.asset}
                         indexInList={index}
                         key={`img-block-${index}`}
+                        topPadding
                     />
                 ))}
             </div>
