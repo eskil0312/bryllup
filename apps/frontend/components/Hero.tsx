@@ -1,9 +1,9 @@
 import { SanityImageAssetDocument } from 'next-sanity';
-import { Dancing_Script } from 'next/font/google';
+import { Playfair_Display } from 'next/font/google';
 import Image from 'next/image';
 import clsx from 'clsx';
 
-const inter = Dancing_Script({ weight: '400', subsets: ['latin'] });
+const inter = Playfair_Display({ weight: '400', subsets: ['latin'] });
 type HeroProps = {
     image: {
         asset: SanityImageAssetDocument;
@@ -28,6 +28,7 @@ const Hero = ({ image, title, subTitle }: HeroProps) => {
             <div
                 className={clsx(
                     'absolute left-0 right-0 mr-auto ml-auto w-120 text-white text-center top-24',
+                    inter.className,
                 )}
             >
                 <h1 className={'text-5xl md:text-6xl '}>{title}</h1>

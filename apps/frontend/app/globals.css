@@ -12,4 +12,13 @@
     @apply pb-4;
 
   }
+  div {
+    @apply text-large;
+  }
+  p {
+    @apply text-large;
+  }
+  a {
+    @apply text-large;
+  }
 }

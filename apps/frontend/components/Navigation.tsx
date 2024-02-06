@@ -10,8 +10,10 @@ import {
     NavbarMenuItem,
 } from '@nextui-org/react';
 import clsx from 'clsx';
+import { Playfair_Display } from 'next/font/google';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+const inter = Playfair_Display({ weight: '400', subsets: ['latin'] });
 
 const menuItems = [
     { label: 'Om oss', route: 'om-oss' },
@@ -34,7 +36,10 @@ const Navigation = () => {
                     className="sm:hidden"
                 />
                 <NavbarBrand className="absolute right-[50%] translate-x-2/4 sm:left-8 sm:right-auto">
-                    <Link className="font-bold text-inherit text-xl" href="/">
+                    <Link
+                        className={clsx('font-bold text-inherit text-xl', inter.className)}
+                        href="/"
+                    >
                         S | E
                     </Link>
                 </NavbarBrand>
@@ -46,7 +51,7 @@ const Navigation = () => {
                         <Link
                             color="foreground"
                             href={`/${menuItem.route}`}
-                            className={clsx({
+                            className={clsx('text-large', {
                                 ['underline']: pathName.includes(menuItem.route),
                             })}
                         >
