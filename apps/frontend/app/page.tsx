@@ -52,7 +52,7 @@ export default async function Home() {
         next: { revalidate: 60 },
     });
     return (
-        <main>
+        <div>
             <Hero
                 image={page.heroBlock.image}
                 title={page.heroBlock.title}
@@ -75,6 +75,6 @@ export default async function Home() {
                     />
                 ))}
             </div>
-        </main>
+        </div>
     );
 }
