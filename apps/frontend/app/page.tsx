@@ -60,7 +60,7 @@ export default async function Home() {
             />
             <div className="flex flex-col">
                 <div className="flex flex-col  pt-14 p-8">
-                    <h2 className="text-3xl md:text-3xl">{page.introBlock.title}</h2>
+                    <h2 className="text-3xl md:text-3xl md:text-center">{page.introBlock.title}</h2>
                     <div className="m-auto max-w-2xl r">
                         <PortableText value={page.introBlock.body} />
                     </div>
