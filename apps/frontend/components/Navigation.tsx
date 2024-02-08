@@ -60,12 +60,12 @@ const Navigation = () => {
                     </NavbarItem>
                 ))}
             </NavbarContent>
-            <NavbarMenu>
+            <NavbarMenu className="list-none">
                 {menuItems.map((menuItem, index) => (
                     <NavbarMenuItem key={`${menuItem}-${index}`}>
                         <Link
                             color={'foreground'}
-                            className={clsx('w-full', {
+                            className={clsx('w-full text-2xl', {
                                 ['underline']: pathName.includes(menuItem.route),
                             })}
                             href={`/${menuItem.route}`}

@@ -19,6 +19,10 @@
     @apply text-large;
   }
   a {
-    @apply text-large;
+    @apply text-large underline;
+
+  }
+  ul {
+    @apply list-disc
   }
 }
