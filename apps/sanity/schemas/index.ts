@@ -5,19 +5,10 @@ import {aboutUsPage} from './documents/aboutUsPage'
 import {frontPage} from './documents/frontPage'
 import {programPage} from './documents/programPage'
 import {questionsPage} from './documents/questionsPage'
-import {sleepoverPage} from './documents/sleepoverPage'
 import {vipPage} from './documents/vipPage'
 import {wishListPage} from './documents/wishListPage'
 
-const documents = [
-  frontPage,
-  vipPage,
-  aboutUsPage,
-  programPage,
-  wishListPage,
-  sleepoverPage,
-  questionsPage,
-]
+const documents = [frontPage, vipPage, aboutUsPage, programPage, wishListPage, questionsPage]
 const blocks = [portableText(), textImageBlock, profileBlock]
 
 export const schemaTypes = [...documents, ...blocks]

@@ -19,7 +19,6 @@ const menuItems = [
     { label: 'Om oss', route: 'om-oss' },
     { label: 'VIP', route: 'vip' },
     { label: 'Q & A', route: 'sporsmal' },
-    { label: 'Opphold', route: 'opphold' },
     { label: 'Ønskeliste', route: 'onskeliste' },
     { label: 'Kjøreplan', route: 'kjoreplan' },
 ];

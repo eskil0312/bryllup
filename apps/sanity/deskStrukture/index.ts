@@ -13,7 +13,6 @@ import {vipPage} from '../schemas/documents/vipPage'
 import {aboutUsPage} from '../schemas/documents/aboutUsPage'
 import {programPage} from '../schemas/documents/programPage'
 import {wishListPage} from '../schemas/documents/wishListPage'
-import {sleepoverPage} from '../schemas/documents/sleepoverPage'
 import {questionsPage} from '../schemas/documents/questionsPage'
 
 const vipPageStructure = (S: StructureBuilder) =>
@@ -38,13 +37,6 @@ const wishListPageStructure = (S: StructureBuilder) =>
     .child(
       S.document().schemaType(wishListPage.name).title('Ønskeliste').documentId('WishListPage'),
     )
-
-const sleepoverPageStructure = (S: StructureBuilder) =>
-  S.listItem()
-    .title('Opphold')
-    .id('sleepoverPage')
-    .icon(RiHomeLine)
-    .child(S.document().schemaType(sleepoverPage.name).title('Opphold').documentId('SleepoverPage'))
 
 const questionsPageStructure = (S: StructureBuilder) =>
   S.listItem()
@@ -76,6 +68,5 @@ export const deskStructure = (S: StructureBuilder) =>
       vipPageStructure(S),
       programPageStructure(S),
       wishListPageStructure(S),
-      sleepoverPageStructure(S),
       questionsPageStructure(S),
     ])
