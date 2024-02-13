@@ -17,8 +17,8 @@
     @apply font-semibold
 
   }
-  h3, h4 {
-    @apply text-xl;
+  h4 {
+    @apply text-2xl;
     @apply py-4;
     @apply font-medium
 
